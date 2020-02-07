@@ -262,7 +262,7 @@ var UIController = (function() {
         summary = "😁Well done! You've made a fair bit of savings this month!";
       }
 
-      newDiv.innerHTML = `<div class="card_date">${month}:<button class="card_delete_btn"><i class="ion-ios-close-outline"></i></button></div></div></div><ul class="card_inputs"><li>Income: ${income}</li><li>Expenses: ${expenses} (${percentage})</li><li>&nbsp;</li><li>Budget: ${budget}</li></ul><div class="card_summary">${summary}</div>`;
+      newDiv.innerHTML = `<div class="card_date">${month}:<button class="card_delete_btn"><i class="far fa-times-circle"></i></i></button></div></div></div><ul class="card_inputs"><li>Income: ${income}</li><li>Expenses: ${expenses} (${percentage})</li><li>&nbsp;</li><li>Budget: ${budget}</li></ul><div class="card_summary">${summary}</div>`;
 
       newDiv.setAttribute('class', 'saved_card');
 
@@ -330,12 +330,12 @@ var UIController = (function() {
       if (type === 'inc') {
 
         element = DOMstrings.incomeContainer;
-        html = '<div class="item clearfix" id="inc-%id%"><div class="item_description">%description%</div><div class="right clearfix"><div class="item_value">%value%</div><div class="item_delete"><button class="item_delete_btn"><i class="ion-ios-close-outline"></i></button></div></div></div>'
+        html = '<div class="item clearfix" id="inc-%id%"><div class="item_description">%description%</div><div class="right clearfix"><div class="item_value">%value%</div><div class="item_delete"><button class="item_delete_btn"><i class="far fa-times-circle"></i></i></button></div></div></div>'
 
       } else if (type === 'exp') {
 
         element = DOMstrings.expenseContainer;
-        html = '<div class="item clearfix" id="exp-%id%"><div class="item_description">%description%</div><div class="right clearfix"><div class="item_value">%value%</div><div class="item_percentage">21%</div><div class="item_delete"><button class="item_delete_btn"><i class="ion-ios-close-outline"></i></button></div></div></div>';
+        html = '<div class="item clearfix" id="exp-%id%"><div class="item_description">%description%</div><div class="right clearfix"><div class="item_value">%value%</div><div class="item_percentage">21%</div><div class="item_delete"><button class="item_delete_btn"><i class="far fa-times-circle"></i></i></button></div></div></div>';
 
       }
 
