@@ -32,7 +32,7 @@ const budgetController = (() => {
     }
   }
 
-  const Income = function(id, description, value) {
+  const Income = (id, description, value) => {
 
     this.id = id;
     this.description = description;
